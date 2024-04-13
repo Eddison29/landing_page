@@ -1,0 +1,522 @@
+html::-webkit-scrollbar {
+    display: none;
+    pointer-events: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    caret-color: transparent;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(12, 48, 103, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Judson';
+    position: fixed;
+    z-index: 2;
+
+}
+
+.school-logo-name-branches {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.school-name-branches {
+    margin-left: 20px;
+}
+
+.school-name {
+    font-size: 22px;
+}
+
+.school-branches {
+    font-size: 10px;
+}
+
+
+header nav {
+    height: 100%;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0% 18px 0% 18px;
+    font-size: 12px;
+    font-family: sans-serif;
+    transition: .3s;
+}
+
+header nav .active {
+    color: lightblue;
+}
+
+
+header nav a:hover {
+    opacity: .7;
+}
+
+
+
+
+
+/* HOME UPPER CONTENT */
+
+.upper-content {  
+    width: 100%;
+    height: 70vh;
+    background-image: url("Resources/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(12, 48, 103, .75);
+    /* background-image: linear-gradient(to right, rgba(12, 48, 103, .8), rgba(12, 48, 103, .6), rgba(12, 48, 103, .4), rgba(12, 48, 103, .2), rgba(12, 48, 103, 0)); */
+}
+
+
+
+
+
+
+/* TYPING TEXT */
+
+.typing-text {
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    margin: 30vh 0 0 80px;
+}
+
+
+.animate {
+    color: white;
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    font-size: 45px;
+    animation: typing 3s steps(30) forwards, hideBorder 0.3s 3s forwards; /* Typing animation */
+ 
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      /* width: 62%; */
+      width: 390px;
+    }
+  }
+
+  
+
+  @keyframes hideBorder {
+    to {
+      border-color: transparent; /* Hide the cursor after typing */
+    }
+  }
+
+  
+
+  .animate-next {
+    color: white;
+    overflow: hidden;
+    visibility: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    font-size: 45px;
+    animation: typing-next 3s 3s steps(30) forwards, hideBorder-next .3s 6s forwards; /* Typing animation */
+  }
+
+  @keyframes typing-next {
+    from {
+        visibility: visible;
+      width: 0;
+    }
+    to {
+      /* width: 70%; */
+      width: 450px;
+      visibility: visible;
+    }
+  }
+
+  
+
+  @keyframes hideBorder-next {
+    to {
+      border-color: transparent; /* Hide the cursor after typing */
+    }
+  }
+
+
+  #page_title_container {
+        position: absolute;
+        display: none;
+        z-index: 1;
+  }
+
+  #distinguisher_text {
+    font-family: 'Mada';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    font-size: 50px;
+    display: block;
+}
+
+#divider2{
+    color: white;
+    border: 1.5px solid white;
+    width: 300px;
+}
+
+
+
+  .typing-text #divider{
+    display: block;
+    color: white;
+    visibility: hidden;
+    border: 1.5px solid white;
+    margin-top: 10px;
+    animation: elongate 1s 6s forwards; /* 1s Animation-duration, 6s Delay before animation starts */
+}
+
+
+
+
+
+@keyframes elongate {
+    from {
+        visibility: visible;
+        width: 0%;
+    }
+    to {
+        width: 450px;
+        visibility: visible;
+    }
+  }
+  
+
+  .typing-text button {
+    display: inline-flex;
+    width: 120px;
+    height: 40px;
+    font-family: 'Kameron';
+    color: rgba(12, 48, 103, .8);
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    animation: show 1s 6s forwards;
+    transition: .3S;
+  }
+
+@keyframes show {
+
+    from {
+        margin-top: 0px;
+        opacity: .2;
+        visibility: visible;
+    }
+    to {
+        margin-top: 20px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.typing-text button:hover {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+.banner {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(67, 107, 167, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Mada';
+}
+
+.lb-schoolName-Branches {
+    margin: 20px 0px 20px 0px;
+    width: 100vw;
+    text-align: end;
+}
+
+.lb-schoolName-Branches div {
+    margin-right: 25px;
+    color: rgb(7, 46, 98);
+}
+
+
+
+
+
+/* DESCRIPTION WITH VECTORS */
+
+
+.perks .text-vector:first-child {
+    margin: 40px auto 0% auto;
+}
+.text-vector {
+    border: px solid black;
+    width: 900px;
+    height: 150px;
+    margin: 110px auto 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.text-vector .text {
+    border: px solid black;
+    width: 45%;
+    height: 100%;
+    font-family: 'Judson';
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    text-align: justify;
+}
+
+.text-vector .text b {
+    font-family: 'Lexend';
+}
+
+.text-vector .text span {
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+}
+
+.text-vector .vector {
+    border: px solid black;
+    width: 45%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.vector img {
+    border: px solid black;
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+
+
+
+
+
+/* ACHIEVEMENTS */
+
+
+.achievements-container {
+    border: px solid red;
+    margin-top: 50px;
+}
+
+.achievements-container img {
+    display: block;
+    margin: auto auto 10px auto;
+    width: 23px;
+    height: 27px;
+}
+
+.achievements-container span {
+    display: block;
+    font-family: 'Mada';
+    font-size: 35px;
+    color: rgb(7, 46, 98);
+    text-align: center;
+}
+
+
+.count-container {
+    border: px solid black;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon-count-title {
+    width: 150px;
+    border: px solid red;
+    margin: 0px 45px 0px 45px;
+
+
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: auto auto 10px auto;
+    transition: .5s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+
+.icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.count, .title {
+    text-align: center;
+    font-family: 'Kameron';
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.count {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+footer {
+    padding: 50px;
+    background-color: rgb(26, 64, 120);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+footer .school-name, .latest-updates, .about-us {
+    border: px solid red;
+    color: white;
+    font-family: 'Judson';
+    font-size: 35px;
+    width: 400px;
+}
+
+.school-name span {
+    color: rgba(126, 216, 255, 1);
+}
+
+footer .latest-updates {
+    font-size: 20px;
+    width: 320px;
+    padding: 0px 20px;
+}
+
+.latest-updates p {
+    font-size: 17px;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: 'Baskervville';
+}
+
+.latest-updates a {
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    transition: .3s;
+}
+
+.latest-updates a:hover {
+    opacity: .7;
+}
+
+
+footer .about-us {
+    font-size: 20px;
+    width: 400px;
+    padding: 0px 70px;
+}
+
+
+
+.location, .phoneNum, .email {
+    border: px solid white;
+    height: 40px;
+    margin: 0px 0px 10px 30px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Arsenal';
+    transition: .3s;
+}
+
+
+.location img, .phoneNum img, .email img {
+    width: 17px;
+    height: 17px;
+    margin-right: 12px;
+}
+
+.location img {
+    width: 15px;
+}
+
+
+
+
+.poweredby {
+    height: auto;
+    width: 100vw;
+    background-color: rgba(12, 48, 103, 1);
+    text-align: center;
+}
+
+.footer-divider {
+    width: 90vw;
+    height: 1.5px;
+    margin: auto;
+    background-color: white;
+}
+
+.poweredby-content {
+    height: 40px;
+    margin: 20px auto;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 14px;
+}
+
